@@ -1,0 +1,238 @@
+/* 可以将原HTML中的style部分提取到一个单独的CSS文件中，例如index.css */
+body {
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.character-card {
+  max-width: 800px;
+  margin: 30px auto;
+  background: rgb(254, 254, 254);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgb(255, 255, 255);
+  transition: transform 0.3s ease;
+}
+
+.character-card:hover {
+  transform: translateY(-5px);
+}
+
+.character-image-container {
+  text-align: center;
+  padding: 30px;
+}
+
+.character-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.character-image:hover {
+  transform: scale(1.05);
+}
+
+.character-name {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.quotes-container {
+  padding: 30px;
+  text-align: center;
+}
+
+.quote-jp {
+  font-weight: bold;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.quote-cn {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+/* 每个角色的特色背景色 */
+.character-1 .character-image-container {
+  background-color: #cbfaff;
+}
+
+.character-1 .character-name {
+  color: green;
+}
+
+.character-1 .quote-jp {
+  color: #47a091;
+}
+
+.character-2 .character-image-container {
+  background-color: #fff8e1;
+}
+
+.character-2 .character-name {
+  color: #ff8f00;
+}
+
+.character-2 .quote-jp {
+  color: #e65100;
+}
+
+.character-3 .character-image-container {
+  background-color: #fce4ec;
+}
+
+.character-3 .character-name {
+  color: #c2185b;
+}
+
+.character-3 .quote-jp {
+  color: #d31e7e;
+}
+
+footer {
+  background-color: #e8f5e9;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+  font-size: 14px;
+  color: #2e7d32;
+}
+
+/* 响应式设计 */
+@media (max-width: 600px) {
+  .character-image {
+    width: 150px;
+    height: 150px;
+  }
+
+  .quotes-container,
+  .character-image-container {
+    padding: 20px 15px;
+  }
+}
+/* 新增样式 */
+.page-title {
+  text-align: center;
+  color: #2e7d32;
+  margin: 20px 0;
+}
+
+.search-bar {
+  max-width: 800px;
+  margin: 0 auto 30px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.search-input {
+  flex: 1;
+  padding: 10px 15px;
+  border: 2px solid #e8f5e9;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.search-input:focus {
+  border-color: #2e7d32;
+}
+
+.filter-select {
+  padding: 10px 15px;
+  border: 2px solid #e8f5e9;
+  border-radius: 8px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.favorite-btn {
+  margin-top: 10px;
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.character-anime {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 5px 0;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 50px;
+  color: #666;
+  font-size: 1.1rem;
+}
+/* 4. 御坂美琴 特色样式（电系蓝调） */
+.character-4 .character-image-container {
+  background-color: #e0f7fa;
+}
+
+.character-4 .character-name {
+  color: #0288d1;
+}
+
+.character-4 .quote-jp {
+  color: #039be5;
+}
+
+/* 5. 土间埋 特色样式（暖黄/粉色调） */
+.character-5 .character-image-container {
+  background-color: #fff3e0;
+}
+
+.character-5 .character-name {
+  color: #f57c00;
+}
+
+.character-5 .quote-jp {
+  color: #fb8c00;
+}
+
+/* 6. 樱岛麻衣 特色样式（紫调） */
+.character-6 .character-image-container {
+  background-color: #f3e5f5;
+}
+
+.character-6 .character-name {
+  color: #8e24aa;
+}
+
+.character-6 .quote-jp {
+  color: #9c27b0;
+}
+
+/* 7. 后藤一里 特色样式（粉紫/浅灰调） */
+.character-7 .character-image-container {
+  background-color: #faf0f5;
+}
+
+.character-7 .character-name {
+  color: #d81b60;
+}
+
+.character-7 .quote-jp {
+  color: #e91e63;
+}
